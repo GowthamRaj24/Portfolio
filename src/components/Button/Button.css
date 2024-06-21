@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+button {
+    position: relative;
+    color: #000000;
+    text-align: center;
+    justify-content: center ;
+    border: none;
+    font-size: 24px;
+    font-family: "Irish Grover", sans-serif;
+    transition: color 0.5s, transform 0.2s, background-color 0.2s;
+    outline: none;
+    border-radius: 20px;
+    height: 53px;
+    width: 201px;
+    border: 3px solid transparent;
+    
+  }
+  
+  button:active {
+    transform: translateY(3px);
+  }
+  
+  button::after,
+  button::before {
+    border-radius: 20px;
+  }
+  
+  .shrink-border {
+    background-color: #fff;
+    color: #000000; /* darken($darkblue, 10%) */
+  }
+  
+  .shrink-border:hover {
+    background-color: #fff;
+    box-shadow: none;
+    color: #000000; /* $offwhite */
+  }
+  
+  .shrink-border::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 3px solid #fff; /* darken($darkblue, 10%) */
+    transition: opacity 0.3s, border 0.3s;
+  }
+  
+  .shrink-border:hover::before {
+    opacity: 0;
+  }
+  
+  .shrink-border::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 3px solid #f0f0f0; /* $offwhite */
+    opacity: 0;
+    z-index: -1;
+    transform: scaleX(1.1) scaleY(1.3);
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  
+  .shrink-border:hover::after {
+    opacity: 1;
+    transform: scaleX(1) scaleY(1);
+  }
+  

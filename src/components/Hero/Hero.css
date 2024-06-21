@@ -1,0 +1,111 @@
+.hero {
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 700px;
+    width:  1300px;
+    border-radius: 30px;
+    background: linear-gradient(to top left, #3F2182 0%, #170C30 85%, #0E071C 100%);
+}
+.left-hero {
+    width: 60%;
+    padding: 50px;
+    margin-left: 20px;
+}
+
+.left-hero h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 0;
+}
+
+.left-hero h2 {
+    font-size: 24px;
+    color: #fff;
+    opacity: 0.6;
+    margin-top: 30px;
+}
+
+.left-hero p {
+    font-size: 16px;
+    color: #ffffff;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.right-hero {
+    width: 40%;
+    padding: 50px;
+}
+
+.image {
+    text-align: center;
+}
+
+.contacts {
+    height: 160px;
+    width: 350px;
+    border-radius: 30px;
+    margin-top: 20px;
+    background-color: #17004A;
+}
+
+.contacts h3 {
+    font-size: 20px;
+    color: #ffffff;
+    padding: 30px;
+    margin-left: 20px;
+}
+
+.contacts ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.contacts li {
+    font-size: 16px;
+    color: #000;
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+
+.contacts li img{
+    width: 40px;
+    height: 40px;
+
+}
+
+
+.left-hero h2 {
+    font-size: 24px;
+    color: #fff;
+    opacity: 0.6;
+}
+
+.left-hero p {
+    font-size: 16px;
+    color: #ffffff;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.right-hero {
+    width: 40%;
+    padding: 50px;
+}
+
+.image {
+    text-align: center;
+}
+
+.hero_button{
+    margin-right: 30px;
+    margin-top: 130px;
+    padding: 10px 20px;
+}
