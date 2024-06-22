@@ -1,13 +1,14 @@
 import "./Header.css";
 import React from "react";
 import Button from "../Button/Button";
+import "animate.css";
 
 
 const Header = () => {
     return (
         
         <div id="head" >
-            <header className="animate__animated animate__backInDown animate__slow">
+            <header className="">
                 <span id="header_title"><h3>My Portfolio</h3></span>
                 <ul id="header_items">
                     <li id="header_item" className="hover-animation active"><a href="#home">Home</a></li>

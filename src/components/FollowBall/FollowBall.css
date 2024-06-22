@@ -2,8 +2,7 @@
     position: absolute;
     width: 50px;
     height: 50px;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(14, 13, 13, 0.5);
     border-radius: 50%;
-    z-index: 10;
-    border: 5px solid; /* Add border to show complementary color */
+    z-index: 10; /* Add border to show complementary color */
   }

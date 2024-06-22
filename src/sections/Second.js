@@ -5,7 +5,7 @@ const Second = () => {
     return (
         <div id="second">
             <div className="threejs">
-                    {/* <ThreeComponent/> */}
+                    <ThreeComponent/>
             </div>
         </div>
     );
