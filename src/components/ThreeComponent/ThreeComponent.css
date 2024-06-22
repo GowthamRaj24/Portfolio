@@ -1,0 +1,11 @@
+.three_items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    background-color: transparent;
+    max-width: 100vw;
+    list-style-type: none;
+    list-style: none;
+}

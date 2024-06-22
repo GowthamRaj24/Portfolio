@@ -1,0 +1,9 @@
+.ball {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    z-index: 10;
+    border: 5px solid; /* Add border to show complementary color */
+  }
