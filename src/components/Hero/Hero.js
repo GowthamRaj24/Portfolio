@@ -1,40 +1,49 @@
-import Button from "../Button/Button";
-import heroImage from "../../images/Ellipse1.png";
-import linkedin from "../../images/linkedin.png";
-import "./Hero.css";
-import TyperAnimation from "../Type_animation/Type_animation";
+import React, { useEffect, useState } from 'react';
+import './Hero.css';
+import Button from '../Button/Button';
+import heroImage from '../../images/Ellipse1.png';
+import linkedin from '../../images/linkedin.png';
+import TyperAnimation from '../Type_animation/Type_animation';
 
 const Hero = () => {
-    const HandleClick = () => {
-        console.log("clicked");
-    }
+    const [scrollY, setScrollY] = useState(0);
+
+    const handleScroll = () => {
+        setScrollY(window.scrollY);
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
-        <div className="hero">
-            <div className="left-hero">
+        <div className="hero" style={{ transform: `scale(${1 - scrollY * 0.001})` }}>
+            <div className="left-hero animate__animated animate__fadeIn animate__slower">
                 <h1><span>I am </span> Gowtham Raju</h1>
-                <h2><span>I am a </span><TyperAnimation first="Full Stack Developer" second="ML Engineer" third="ML $ Automation Inter"/></h2>
-                <p> I am a highly motivated individual pursuing Bachelor of Technology in GITAM University.
-                <br/><br/>Currently, I am actively seeking an internship opportunity to further enrich my practical understanding of the field.</p>
-                <div className="hero_button">
+                <h2><span>I am a </span><TyperAnimation first="Full Stack Developer" second="ML Engineer" third="ML & Automation Engineer" /></h2>
+                <p>I am a highly motivated individual pursuing Bachelor of Technology at GITAM University.
+                    <br /><br />Currently, I am actively seeking an internship opportunity to further enrich my practical understanding of the field.</p>
+                <div className="hero_button animate__animated animate__fadeInRight animate__slower">
                     <Button>Download CV</Button>
                     <Button>Hire Me</Button>
                 </div>
-                
             </div>
-            <div className="right-hero">
-                <div className="image">
+            <div className="right-hero animate__animated animate__fadeIn animate__slower">
+                <div className="image animate__animated animate__fadeIn animate__slower">
                     <img src={heroImage} alt="heroImage" />
                 </div>
                 <div className="contacts">
                     <h3>Contact with me</h3>
                     <ul>
-                        <li onClick={HandleClick}><img src={linkedin} alt="linkedin" /></li>
+                        <li><img src={linkedin} alt="linkedin" /></li>
                         <li><img src={linkedin} alt="linkedin" /></li>
                         <li><img src={linkedin} alt="linkedin" /></li>
                     </ul>
                 </div>
             </div>
-
         </div>
     );
 }

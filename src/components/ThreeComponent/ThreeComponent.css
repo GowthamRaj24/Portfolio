@@ -1,11 +1,27 @@
+.three_outer{
+    background-color: aliceblue;
+    border-radius: 90px;
+    width: 80vw;
+    height: 120px;
+    margin-top: 50px;
+    background-color: #0882952c;
+}
 .three_items{
-    display: flex;
+    border-radius: 30px;
+    margin-left: -50px;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
     margin-top: 20px;
     background-color: transparent;
     max-width: 100vw;
     list-style-type: none;
     list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.three_items li{
+    display: inline-flex;
+    margin: -15px 0px;
+    border-radius: 50%;
 }

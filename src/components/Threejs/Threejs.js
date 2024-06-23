@@ -19,15 +19,16 @@ const ConvexGeometryExample = () => {
             renderer.setPixelRatio(window.devicePixelRatio);
             renderer.setAnimationLoop(animate);
             mountRef.current.appendChild(renderer.domElement);
+            renderer.setSize(250, 150);
 
             // camera
             camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 1000);
-            camera.position.set(15, 20, 30);
+            camera.position.set(15, 30, 30);
             scene.add(camera);
 
             // controls
             const controls = new OrbitControls(camera, renderer.domElement);
-            controls.minDistance = 40;
+            controls.minDistance = 35;
             controls.maxDistance = 50;
             controls.maxPolarAngle = Math.PI / 2;
 
@@ -85,6 +86,7 @@ const ConvexGeometryExample = () => {
 
             const mesh = new THREE.Mesh(meshGeometry, meshMaterial);
             group.add(mesh);
+            mesh.scale.set(1,1);
 
             window.addEventListener('resize', onWindowResize);
         };
