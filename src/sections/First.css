@@ -18,3 +18,15 @@
     height: 100%;
     overflow: hidden;
 }
+
+.second_bottom{
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.second_bottom > div {
+    margin: 0 70px; /* Adjust the value as per your preference */
+}

@@ -22,7 +22,7 @@ const ConvexGeometryExample = () => {
             renderer.setSize(250, 150);
 
             // camera
-            camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 1000);
+            camera = new THREE.PerspectiveCamera(35, window.innerWidth / window.innerHeight, 1, 1000);
             camera.position.set(15, 30, 30);
             scene.add(camera);
 

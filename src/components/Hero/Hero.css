@@ -6,11 +6,11 @@
     margin-top: 40px;
     display: flex;
     position:relative;
-    top: 90px;
+    top: 40px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 680px;
+    height: 730px;
     width: 1350px;
     border-radius: 15px;
     background: linear-gradient(to top left, rgba(58, 31, 117, 0.6) 0%, rgba(23, 12, 48, 0.6) 85%, rgba(14, 7, 28, 0.278) 100%);

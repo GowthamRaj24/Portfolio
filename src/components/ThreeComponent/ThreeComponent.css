@@ -1,12 +1,11 @@
 .three_outer{
-    background-color: aliceblue;
     border-radius: 90px;
-    width: 80vw;
     height: 120px;
-    margin-top: 50px;
-    background-color: #0882952c;
+    background-color: transparent;
+    z-index: -10;
 }
 .three_items{
+    z-index: -10;
     border-radius: 30px;
     margin-left: -50px;
     flex-direction: row;
@@ -21,7 +20,9 @@
 }
 
 .three_items li{
+    z-index: -10;
     display: inline-flex;
+    
     margin: -15px 0px;
     border-radius: 50%;
 }

@@ -1,10 +1,23 @@
+// src/App.js
+import React, { useState, useEffect } from 'react';
 import './App.css';
-import First from '../src/sections/First';
+import First from './sections/First';
+import Loader from './components/Loader/Loader';
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1500);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div className="App">
-      <First />
+      {loading ? <Loader /> : <First />}
     </div>
   );
 }
