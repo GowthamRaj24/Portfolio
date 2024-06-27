@@ -6,5 +6,5 @@ const Fourth = () => {
             <Globe />
         </div>
     );
-    }
+}
 export default Fourth;

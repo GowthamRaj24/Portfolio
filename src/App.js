@@ -17,7 +17,8 @@ function App() {
 
   return (
     <div className="App">
-      {loading ? <Loader /> : 
+      {loading ? 
+      <Loader /> : 
       <First />}
     </div>
   );
