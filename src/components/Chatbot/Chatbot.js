@@ -12,7 +12,7 @@ const Chatbot = () => {
     const handleScroll = () => {
         const maxScroll = Math.max(document.documentElement.scrollHeight, document.body.scrollHeight);
         const currentScroll = window.scrollY;
-        const scale = Math.min(1, currentScroll / maxScroll);
+        const scale = Math.min(1, 0.8 + currentScroll / maxScroll);
         setScrollY(scale);
     };
 
@@ -25,7 +25,7 @@ const Chatbot = () => {
 
     return (
         <>
-            <div className="wow second_chatbot animate__animated " style={{ transform: `scale(${0.5 + scrollY})` }}>
+            <div className="wow second_chatbot animate__animated " style={{ transform: `scale(${scrollY})` }}>
                 <div className="chatbot_header">
                     <span className="chatbot_logo"><img src={logo} alt="Random Image" /></span>
                     <h4 className="chatbot_title">Chatbot</h4>

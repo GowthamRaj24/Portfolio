@@ -1,14 +1,15 @@
 .second_chatbot {
+    position: relative;
     border-radius: 20px;
     border: 1px solid #3a1f7599;
     display: flex;
     color: white;
     font-size: large;
-    display: block;
     width: 30vw;
+    margin-left: -50px;
     height: 60vh;
     background: linear-gradient(to top left, #3a1f7599 0%, rgba(23, 12, 48, 0.6) 85%, rgba(14, 7, 28, 0.278) 100%);
-    position: relative; /* Add this line */
+    flex-direction: column; /* Add this line to stack the header, content, and footer vertically */
 }
 
 .chatbot_header {
@@ -18,31 +19,32 @@
     background-color: #3a1f7599;
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
-}
-.chatbot_header span img{
-    width: 40px;
-    height: 40px;
-    margin-top: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
+    align-items: center; /* Add this line to vertically center the items */
 }
 
-.chatbot_header h4{
+.chatbot_header span img {
+    width: 40px;
+    height: 40px;
+    margin: 10px 20px; /* Combine margin properties for shorthand */
+}
+
+.chatbot_header h4 {
     text-align: center;
-    margin:auto 0;
+    margin: 0; /* Remove auto margin to center the text */
 }
 
 .chatbot_footer {
-    position: absolute; /* Add this line */
-    bottom: 0; /* Add this line */
-    width: 100%; /* Add this line */
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Add this line to horizontally center the input */
 }
 
 .chatbot_footer input {
-    width: calc(100% - 20px); 
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     padding: 10px;
-    height: 40px;
+    height: 50px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     border: none;

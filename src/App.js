@@ -10,14 +10,15 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1500);
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, []);
 
   return (
     <div className="App">
-      {loading ? <Loader /> : <First />}
+      {loading ? <Loader /> : 
+      <First />}
     </div>
   );
 }

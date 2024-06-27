@@ -5,6 +5,9 @@ import heroImage from '../../images/Ellipse1.png';
 import linkedin from '../../images/linkedin.png';
 import TyperAnimation from '../Type_animation/Type_animation';
 import "animate.css";
+import Globe from '../Globe/Globe.tsx';
+import { BorderLight } from '../BorderLight/BorderLight.tsx';
+import { DockDemo } from '../ContactsDock/DemoDock.js';
 
 const Hero = () => {
     const [scrollY, setScrollY] = useState(0);
@@ -37,15 +40,14 @@ const Hero = () => {
                 <div className="image animate__animated animate__fadeIn animate__slower">
                     <img src={heroImage} alt="heroImage" />
                 </div>
+
                 <div className="contacts" >
-                    <h3>Contact with me</h3>
-                    <ul>
-                        <li><img src={linkedin} alt="linkedin" /></li>
-                        <li><img src={linkedin} alt="linkedin" /></li>
-                        <li><img src={linkedin} alt="linkedin" /></li>
-                    </ul>
+                    <div className='dock'>
+                        <DockDemo/>
+                    </div>
                 </div>
             </div>
+            <BorderLight size={250} duration={12} delay={9} />
         </div>
     );
 }

@@ -8,7 +8,7 @@ const TyperAnimation = () => {
                 1000,
                 "AI & ML Engineer",
                 1000,
-                "ML & Automation Intern",
+                "ML & Automation Engineer",
                 1000,
                 "Intern at Murti Labs",
                 1000

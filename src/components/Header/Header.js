@@ -5,6 +5,7 @@ import "animate.css";
 
 
 const Header = () => {
+
     return (
         <div id="head" >
             <header className="animate__animated animate__fadeInDown">

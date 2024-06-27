@@ -1,5 +1,6 @@
 import "./About.css";
 import React, { useEffect, useState } from "react";
+import { BorderLight } from "../BorderLight/BorderLight.tsx";
 
 const About = () => {
     const phone = "+91 9491226619";
@@ -10,7 +11,7 @@ const About = () => {
     const handleScroll = () => {
         const maxScroll = Math.max(document.documentElement.scrollHeight, document.body.scrollHeight);
         const currentScroll = window.scrollY;
-        const scale = Math.min(1, currentScroll / maxScroll);
+        const scale = Math.min(1, 0.8 + currentScroll / maxScroll);
         setScrollY(scale);
     };
 
@@ -21,7 +22,7 @@ const About = () => {
         };
     }, []);
     return (
-        <div className="second_about" style={{ transform: `scale(${0.5 + scrollY})` }}>
+        <div className="second_about" style={{ transform: `scale(${scrollY})` }}>
             <h1>About Me</h1>
             <ul>
                 <li>I am a full stack developer who is passionate about creating interactive web applications.</li>
@@ -34,6 +35,7 @@ const About = () => {
                 <h4>Email :<span>{email}</span></h4>
                 <h4>Degree :<span>{Degree}</span></h4>
             </div>
+            <BorderLight size={250} duration={12} delay={9} />
         </div>
     )
 }

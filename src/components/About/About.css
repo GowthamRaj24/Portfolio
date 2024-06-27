@@ -1,30 +1,50 @@
 .second_about {
+    position: relative;
     border-radius: 20px;
     border: 1px solid #000;
     padding: 20px;
     display: flex;
-    align-items: left;
+    justify-content: space-around;
     flex-direction: column;
     color: white;
     font-size: large;
     width: 50vw;
+    height: 61vh;
     background: linear-gradient(to top left, rgba(58, 31, 117, 0.6) 0%, rgba(23, 12, 48, 0.6) 85%, rgba(14, 7, 28, 0.278) 100%);
 }
-.second_about h1{
-    padding-left: 50px;
-    float: left;
+
+.second_about h1 {
+    position: absolute;
+    left: 50px;
+    top: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
 }
-.second_about ul{
+
+.second_about ul {
+    position: absolute;
+    top: 7rem;
+    font-size: 1.2rem;
+    left: 50px;
+    padding-right: 40px;
     list-style-type: none;
 }
-.second_about h4{
-    padding-left: 50px;
-    float: left;
-}
-.contact_info{
+
+
+
+.contact_info {
+    position: absolute;
     display: flex;
+    font-size: 1.3rem;
     flex-direction: column;
-    justify-content: space-between;
-    padding-left: 50px;
-    padding-right: 50px;
+    justify-content: center;
+    font-weight: 500;
+    top: 20rem;
+    left: 150px;
+    width: 100%;
+}
+
+.contact_info h4{
+    margin: 10px 0;
+
 }
