@@ -1,28 +1,29 @@
 import { Dock, DockIcon } from "./ContactsDock.tsx";
 import React from "react";
 import "../../output.css";
+import "./DemoDock.css";
 
 export type IconProps = React.HTMLAttributes<SVGElement>;
 
 export function DockDemo() {
   return (
-    <div className="">
-     
-      <Dock>
-        <DockIcon>
-          <Icons.gitHub className="h-6 w-6" />
+    <div className="outer_dock">
+     <h3>Contact with me :</h3>
+      <Dock className="inner_dock">
+        <DockIcon className="dock_item">
+          <Icons.gitHub  />
         </DockIcon>
-        <DockIcon>
-          <Icons.googleDrive className="h-6 w-6" />
+        <DockIcon className="dock_item">
+          <Icons.googleDrive  />
         </DockIcon>
-        <DockIcon>
-          <Icons.notion className="h-6 w-6" />
+        <DockIcon className="dock_item">
+          <Icons.notion  />
         </DockIcon>
-        <DockIcon>
-          <Icons.openai className="h-6 w-6" />
+        <DockIcon className="dock_item">
+          <Icons.openai   />
         </DockIcon>
-        <DockIcon>
-          <Icons.whatsapp className="h-6 w-6" />
+        <DockIcon className="dock_item">
+          <Icons.whatsapp  />
         </DockIcon>
       </Dock>
     </div>

@@ -4,6 +4,9 @@
   "private": true,
   "dependencies": {
     "@chakra-ui/react": "^2.8.2",
+    "@material-ui/core": "^4.0.0",
+    "@material-ui/icons": "^4.0.0",
+    "@react-three/fiber": "^8.16.8",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -11,11 +14,15 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "framer-motion": "^11.2.12",
+    "framer-motion-3d": "^11.2.12",
+    "gsap": "^3.12.5",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-loader-spinner": "^6.1.6",
     "react-scripts": "5.0.1",
     "react-type-animation": "^3.2.0",
+    "react-use-measure": "^2.1.1",
+    "react-vertical-timeline-component": "^3.6.0",
     "rsuite": "^5.64.1",
     "tailwind-merge": "^2.3.0",
     "three": "^0.165.0",
@@ -48,10 +55,13 @@
     ]
   },
   "devDependencies": {
+    "@types/react-vertical-timeline-component": "^3.3.6",
+    "@typescript-eslint/parser": "^7.14.1",
     "autoprefixer": "^10.4.19",
     "cobe": "^0.6.3",
     "postcss": "^8.4.38",
     "react-spring": "^9.7.3",
-    "tailwindcss": "^3.4.4"
+    "tailwindcss": "^3.4.4",
+    "typescript": "^5.5.2"
   }
 }

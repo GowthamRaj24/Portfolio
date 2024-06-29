@@ -1,5 +1,4 @@
 import { cn } from "../../lib/utils.ts";
-import "../../output.css";
 
 interface BorderBeamProps {
   className?: string;

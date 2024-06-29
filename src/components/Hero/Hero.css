@@ -10,10 +10,10 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 730px;
+    height: 700px;
     width: 1350px;
     border-radius: 15px;
-    background: linear-gradient(to top left, rgba(58, 31, 117, 0.6) 0%, rgba(23, 12, 48, 0.6) 85%, rgba(14, 7, 28, 0.278) 100%);
+    background: linear-gradient(to top left, #3a1f7599 0%, rgba(23, 12, 48, 0.6) 85%, rgba(14, 7, 28, 0.278) 100%);
 }
 
 .left-hero {
@@ -74,24 +74,28 @@
     margin-bottom: 20px;
 }
 
+.hero_button{
+    display: flex;
+    max-width: 150px;
+    max-height: 80px;
+    padding: 15px 30px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
 .hero_button button{
-    margin-right: 30px;
-    margin-top: 80px;
-    padding: 10px 20px;
+    background-color: #17004A;
+    margin-top: 50px;
+    margin-right: 180px;
 }
 
 .contacts {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     height: 140px;
-    width: 300px;
+    width: 350px;
     border-radius: 30px;
-    margin-top: 20px;
     background-color: #17004A;
-}
-.dock{
-    position: absolute;
-    top: 0;
+    display: flex;
 }

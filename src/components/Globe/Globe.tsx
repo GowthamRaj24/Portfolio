@@ -9,8 +9,8 @@ import "../../output.css";
 
 
 const GLOBE_CONFIG: COBEOptions = {
-  width: 1200,
-  height: 1200,
+  width: 3000,
+  height: 3000,
   onRender: () => {},
   devicePixelRatio: 2,
   phi: 0,
@@ -51,7 +51,7 @@ const Globe = ({
   const [{ r }, api] = useSpring(() => ({
     r: 0,
     config: {
-      mass: 1,
+      mass: 2,
       tension: 280,
       friction: 40,
       precision: 0.001,

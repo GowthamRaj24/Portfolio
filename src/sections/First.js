@@ -6,8 +6,9 @@ import "./First.css";
 import ThreeComponent from "../components/ThreeComponent/ThreeComponent";
 import About from "../components/About/About";
 import Chatbot from "../components/Chatbot/Chatbot";
-import Globe from "../components/Globe/Globe.tsx";
-import { BorderLight } from "../components/BorderLight/BorderLight.tsx";
+import Timeline from "../components/Timeline/Timeline.js";
+import { MeteorsDemo } from "../components/Meteors/MeteorsDemo.js";
+import {Meteors} from "../components/Meteors/Meteors.tsx";
 
 const First = () => {
     return (
@@ -33,24 +34,13 @@ const First = () => {
                         <About />
                     </div>
                     <div className="chatbot">
-                        <Chatbot />
+                        {/* <Chatbot /> */}
                     </div>
                 </div>
             </div>
 
-            <div className="third">
-                <div className="third_left">
-                    <BorderLight size={250} duration={12} delay={9} />
-                </div>
 
-                <div className="third_right">
-                    <BorderLight size={250} duration={12} delay={9} />
-                </div>
-            </div>
-
-            <div className="fourth">
-                <Globe className="globe"/>
-            </div>
+            
         </>
     );
 };
