@@ -21,22 +21,20 @@ const First = () => {
                 <Hero />
             </div>
 
-            <div id="second">
-                <div className="second">
+            <div className="second">
                     <div className="threejs">
                         <div className="threejs_item">
                             <ThreeComponent />
                         </div>
                     </div>
-                </div>
                 <div className="second_bottom">
                     <div className="about">
                         <About />
                     </div>
-                    <div className="chatbot">
-                        {/* <Chatbot /> */}
-                    </div>
                 </div>
+            </div>
+
+            <div className="third">
             </div>
 
 

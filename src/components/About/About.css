@@ -8,9 +8,9 @@
     flex-direction: column;
     color: white;
     font-size: large;
-    width: 50vw;
-    height: 61vh;
-    /* background: linear-gradient(to top left, rgba(58, 31, 117, 0.6) 0%, rgba(23, 12, 48, 0.6) 85%, rgba(14, 7, 28, 0.278) 100%); */
+    width: 60vw;
+    height: 65vh;
+    background: linear-gradient(to top left, rgba(58, 31, 117, 0.6) 0%, rgba(23, 12, 48, 0.6) 85%, rgba(14, 7, 28, 0.278) 100%);
 }
 
 .second_about h1 {

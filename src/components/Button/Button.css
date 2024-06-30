@@ -26,6 +26,7 @@ button {
   position: relative;
   text-align: center;
   display: flex;
+  
   align-items: center;
 }
 
@@ -46,6 +47,7 @@ button {
 }
 
 .blush {
+  
   position: absolute;
   bottom: -15px;
   width: 100px;
@@ -71,6 +73,7 @@ button {
   right: -80px;
   width: calc(100% + 160px);
   pointer-events: none;
+  
 }
 
 .shapes canvas {
@@ -86,6 +89,7 @@ button {
   transform: translateZ(0);
   font-weight: 700;
   z-index: 1;
+  
 }
 
 .default {
