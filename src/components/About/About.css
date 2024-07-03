@@ -1,7 +1,6 @@
 .second_about {
     position: relative;
     border-radius: 20px;
-    border: 1px solid #000;
     padding: 20px;
     display: flex;
     justify-content: space-around;
@@ -35,7 +34,6 @@
     justify-content: center;
     flex-direction: column;
     font-size: 1.4rem;
-
 }
 
 

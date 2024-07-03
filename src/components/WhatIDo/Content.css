@@ -1,8 +1,10 @@
 .boxes{
     position: relative;
-    top: 9vh;
+    top: 11vh;
     text-align: center;
+    
 }
+
 .boxes .box{
     position: relative;
     display: inline-block;
@@ -14,6 +16,7 @@
     transform: translateY(0);
     transition: .9s;
 }
+
 .boxes .box:hover{
     box-shadow: 10px 0px 20px #3a1f7599; 
     transform: translateY(-25px);
@@ -48,7 +51,7 @@
     font-size: 20px;
     left: 0; 
     width: 100%;  height: 50%;
-    color: #fff;
+    color: #b4baba;
     box-sizing: border-box;
     padding: 0 20px;
     text-align: left;

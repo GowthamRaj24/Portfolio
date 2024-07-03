@@ -1,40 +1,42 @@
-import React from "react";
+import React, { useEffect } from "react";
+import ScrollReveal from "scrollreveal";
 import BackgroundAnimation from "../components/BackgroundAnimation/BackgroundAnimation";
 import Header from "../components/Header/Header";
 import Hero from "../components/Hero/Hero";
 import "./First.css";
 import ThreeComponent from "../components/ThreeComponent/ThreeComponent";
 import About from "../components/About/About";
-import ScrollReveal from "scrollreveal";
-import WhatIDo from "../components/WhatIDo/WhatIDo";
 import Content from "../components/WhatIDo/Content";
 import { IconCloudDemo } from "../components/Cloud/Cloud";
+import { OrbitControls } from "three-stdlib";
+import { OrbitingCirclesDemo } from "../components/OrbitCircle/OrbitCircle";
+import Button from "../components/Button/Button";
+import BlurInDemo from "../components/WhatIDo/BlurInDemo";
+import { OrbitingCirclesDemo2 } from "../components/OrbitCircle/OrbitCircle2";
+import "../output.css";
+import Skills from "../components/Skills/Skills";
 
 const First = () => {
-    ScrollReveal().reveal(".about", {
-        duration: 2000,
-        origin: "bottom",
-        distance: "100px",
-        easing: "cubic-bezier(.37,.01,.74,1)",
-        opacity: 0.3,
-        scale: 0.5
-      });
+
+    useEffect(() => {
+        ScrollReveal().reveal(".reveal" , {
+            duration: 2500})
+    }
+    , []);
+
+
     return (
         <>
             <div className="background-animation-container">
-                <BackgroundAnimation />
+            <BackgroundAnimation />
             </div>
             <Header />
             <div className="first">
+            
                 <Hero />
             </div>
 
             <div className="second">
-                    {/* <div className="threejs">
-                        <div className="threejs_item">
-                            <ThreeComponent />
-                        </div>
-                    </div> */}
                 <div className="second_bottom">
                     <div className="about">
                         <About />
@@ -43,22 +45,36 @@ const First = () => {
             </div>
 
             <div className="third">
-                <WhatIDo/>
-                    <div className="thirdthreejs">
-                        <div className="threejs_item">
-                            <ThreeComponent />
-                        </div>
+                <BlurInDemo text="Services" className="services"/>
+                <div className="thirdthreejs">
+                    <div className="threejs_item reveal-on-scroll">
+                        <ThreeComponent />
                     </div>
-                <Content/>
+                </div>
+                <Content className="reveal"/>
             </div>
 
             <div className="fourth">
-                <div className="fourth_left">
-                    <IconCloudDemo />
+                <div className="project_title">
+                <BlurInDemo text="Projects"/>
+                </div>
+                <div className="projects">
+                    <OrbitingCirclesDemo t="G-Buddy" d={["Churn Prediciton for businesses to understand and anticipate customer behavior using Logistic Regression Model." ,"Churn Prediciton for businesses to understand and anticipate customer behavior using Logistic Regression Model." , "Churn Prediciton for businesses to understand and anticipate customer behavior using Logistic Regression Model."]} className="reveal"/>
+                    <OrbitingCirclesDemo2 t="G-Helper" d={["Churn Prediciton for businesses to understand and anticipate customer behavior using Logistic Regression Model." ,"Churn Prediciton for businesses to understand and anticipate customer behavior using Logistic Regression Model." , "Churn Prediciton for businesses to understand and anticipate customer behavior using Logistic Regression Model."]} className="reveal"/>
+                    <OrbitingCirclesDemo t="Segmention Analysis" d={["Churn Prediciton for businesses to understand and anticipate customer behavior using Logistic Regression Model." ,"Churn Prediciton for businesses to understand and anticipate customer behavior using Logistic Regression Model." , "Churn Prediciton for businesses to understand and anticipate customer behavior using Logistic Regression Model."]} className="reveal"/>
+                </div>
+                <div className="view_more">
+                    <a href="www.google.com">
+                    <u>View More  ></u>
+                    </a>
                 </div>
             </div>
 
-            
+            <div className="fifth">
+                <BlurInDemo text="Skills" />
+                <Skills/>
+                
+            </div>
         </>
     );
 };

@@ -1,0 +1,25 @@
+.skills {
+    position: relative;
+    margin: 30px auto;
+    z-index: 999;
+    margin-top: 40px;
+    display: flex;
+    position: relative;
+    top: 40px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 700px;
+    width: 95vw;
+    border-radius: 15px;
+    background: linear-gradient(to top left, #3a1f7599 0%, rgba(23, 12, 48, 0.6) 85%, rgba(14, 7, 28, 0.278) 100%);
+}
+
+.skill_left {
+    width: 50%;
+}
+
+.skill_right {
+    background-color: black;
+    width: 50%;
+}

@@ -35,9 +35,14 @@
 
 }
 
+.view_more{
+    font-size: smaller;
+    margin-top: 50px;
+    font-size: 14px;
+}
+
 
 .third{
-    height: 100vh;
     font-family: 'Inter', sans-serif;
     text-align: center;
     font-size: 50px;
@@ -45,7 +50,7 @@
     letter-spacing: -1px;
     line-height: 1.2;
     text-align: center;
-    margin: 100px 0 40px;
+    margin-top: 150px;
     color: #fff;
 }
 
@@ -55,9 +60,7 @@
     height: 85vh;
 }
 
-.fourth{
-    height: 100vh;
-}
+
 .globe{
     top: 0;
     left: 0;
@@ -65,10 +68,47 @@
     height: 50%;
 }
 
-.fifth{
-    height: 100vh;
-    display: flex;
+.fourth{
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    line-height: 1.2;
+    text-align: center;
+    margin-top: 250px;
+    color: #b4baba;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    display: flex;
 }
+
+.services{
+    margin-bottom: 30px;
+}
+
+.service_item{
+    margin-top: 150px;
+}
+
+.project_title{
+    padding-bottom: 100px;
+}
+
+.thirdthreejs{
+    margin-top: 80px;
+}
+
+.fifth{
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    line-height: 1.2;
+    text-align: center;
+    margin-top: 250px;
+    color: #b4baba;
+}
+

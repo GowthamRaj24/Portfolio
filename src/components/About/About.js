@@ -11,7 +11,7 @@ const About = () => {
     const handleScroll = () => {
         const maxScroll = Math.max(document.documentElement.scrollHeight, document.body.scrollHeight);
         const currentScroll = window.scrollY;
-        const scale = Math.min(1, 0.8 + currentScroll / maxScroll);
+        const scale = Math.min(1.5, 1 + currentScroll / maxScroll);
         setScrollY(scale);
     };
 
@@ -35,7 +35,7 @@ const About = () => {
                 <h4>Email :<span>{email}</span></h4>
                 <h4>Degree :<span>{Degree}</span></h4>
             </div>
-            <BorderLight size={250} duration={12} delay={9} />
+            {/* <BorderLight size={300} duration={12} delay={20} /> */}
         </div>
     )
 }

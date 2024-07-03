@@ -9,6 +9,7 @@ import { BorderLight } from '../BorderLight/BorderLight.tsx';
 import { DockDemo } from '../ContactsDock/DemoDock.js';
 import Meteors from '../Meteors/Meteors.tsx';
 
+
 const Hero = () => {
     const [scrollY, setScrollY] = useState(0);
 
@@ -29,9 +30,9 @@ const Hero = () => {
             
             <div className="left-hero animate__animated animate__fadeIn animate__slower">
                 <h1><span>I am </span> Gowtham Raju</h1>
-                <h2><span>I am a </span><TyperAnimation first="Full Stack Developer" second="ML Engineer" third="ML & Automation Engineer" /></h2>
-                <p>I am a highly motivated individual pursuing Bachelor of Technology at GITAM University.
-                    <br /><br />Currently, I am actively seeking an internship opportunity to further enrich my practical understanding of the field.</p>
+                <h2 className='hero_sub'><span>I am a </span><TyperAnimation first="Full Stack Developer" second="ML Engineer" third="ML & Automation Engineer" /></h2>
+                <p className='hero_description'>I am a highly motivated individual pursuing Bachelor of Technology at GITAM University.
+                    <br />Currently, I am actively seeking an internship opportunity to further enrich my practical understanding of the field.</p>
                 <div className="hero_button">
                     <Button>Resume</Button>
                     <Button>Hire Me</Button>

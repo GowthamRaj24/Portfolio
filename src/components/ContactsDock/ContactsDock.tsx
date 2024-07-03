@@ -16,7 +16,7 @@ const DEFAULT_MAGNIFICATION = 60;
 const DEFAULT_DISTANCE = 140;
 
 const dockVariants = cva(
-  "mx-auto w-max mt-8 h-[58px] p-2 flex items-end gap-2",
+  "mx-auto w-max mt-8 h-[80px] p-2 flex items-end gap-2",
 );
 
 const Dock = React.forwardRef<HTMLDivElement, DockProps>(
@@ -96,6 +96,7 @@ const DockIcon = ({
     stiffness: 150,
     damping: 12,
   });
+  width = useTransform(width, (val: number) => val * 1.5);
 
   return (
     <motion.div
