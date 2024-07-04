@@ -15,11 +15,58 @@
     background: linear-gradient(to top left, #3a1f7599 0%, rgba(23, 12, 48, 0.6) 85%, rgba(14, 7, 28, 0.278) 100%);
 }
 
+
 .skill_left {
     width: 50%;
 }
 
 .skill_right {
-    background-color: black;
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    color: white;
+    font-size: 18px;
+}
+
+.languages,
+.frameworks,
+.databases,
+.tools {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+@media (max-width: 600px) {
+    .skills {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .skill_left {
+        width: 100%;
+    }
+    
+    .skill_right {
+        align-items: center;
+        padding: 10px;
+        text-align: center;
+    }
 }

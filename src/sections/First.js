@@ -37,11 +37,11 @@ const First = () => {
             </div>
 
             <div className="second">
-                <div className="second_bottom">
+                {/* <div className="second_bottom">
                     <div className="about">
                         <About />
                     </div>
-                </div>
+                </div> */}
             </div>
 
             <div className="third">
@@ -52,6 +52,12 @@ const First = () => {
                     </div>
                 </div>
                 <Content className="reveal"/>
+            </div>
+
+            <div className="fifth">
+                <BlurInDemo text="Skills" />
+                <Skills/>
+                
             </div>
 
             <div className="fourth">
@@ -70,11 +76,7 @@ const First = () => {
                 </div>
             </div>
 
-            <div className="fifth">
-                <BlurInDemo text="Skills" />
-                <Skills/>
-                
-            </div>
+            
         </>
     );
 };
