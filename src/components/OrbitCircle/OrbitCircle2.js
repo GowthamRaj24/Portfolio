@@ -5,11 +5,7 @@ import ScrollReveal from "scrollreveal";
 
 
 export function OrbitingCirclesDemo2({t , d}) {
-    useEffect(() => {
-        ScrollReveal().reveal(".reveal" , {
-            duration: 2500})
-    }
-    , []);
+
   return (
     <div className="Project">
         <OrbitContent title={t} description={d}/>

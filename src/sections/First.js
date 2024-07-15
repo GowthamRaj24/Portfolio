@@ -15,6 +15,8 @@ import BlurInDemo from "../components/WhatIDo/BlurInDemo";
 import { OrbitingCirclesDemo2 } from "../components/OrbitCircle/OrbitCircle2";
 import "../output.css";
 import Skills from "../components/Skills/Skills";
+import Projects from "../components/Projects/Projects";
+import Timeline from "../components/Timeline/Timeline";
 
 const First = () => {
 
@@ -45,7 +47,7 @@ const First = () => {
             </div>
 
             <div className="third">
-                <BlurInDemo text="Services" className="services"/>
+                <BlurInDemo text="Services"/>
                 <div className="thirdthreejs">
                     <div className="threejs_item reveal-on-scroll">
                         <ThreeComponent />
@@ -67,14 +69,31 @@ const First = () => {
                 <div className="projects">
                     <OrbitingCirclesDemo t="G-Buddy" d={["Churn Prediciton for businesses to understand and anticipate customer behavior using Logistic Regression Model." ,"Churn Prediciton for businesses to understand and anticipate customer behavior using Logistic Regression Model." , "Churn Prediciton for businesses to understand and anticipate customer behavior using Logistic Regression Model."]} className="reveal"/>
                     <OrbitingCirclesDemo2 t="G-Helper" d={["Churn Prediciton for businesses to understand and anticipate customer behavior using Logistic Regression Model." ,"Churn Prediciton for businesses to understand and anticipate customer behavior using Logistic Regression Model." , "Churn Prediciton for businesses to understand and anticipate customer behavior using Logistic Regression Model."]} className="reveal"/>
-                    <OrbitingCirclesDemo t="Segmention Analysis" d={["Churn Prediciton for businesses to understand and anticipate customer behavior using Logistic Regression Model." ,"Churn Prediciton for businesses to understand and anticipate customer behavior using Logistic Regression Model." , "Churn Prediciton for businesses to understand and anticipate customer behavior using Logistic Regression Model."]} className="reveal"/>
+                    {/* <OrbitingCirclesDemo t="Analysis" d={["Churn Prediciton for businesses to understand and anticipate customer behavior using Logistic Regression Model." ,"Churn Prediciton for businesses to understand and anticipate customer behavior using Logistic Regression Model." , "Churn Prediciton for businesses to understand and anticipate customer behavior using Logistic Regression Model."]} className="reveal"/> */}
+                </div>
+                <div className="project_gallery">
+                    <Projects/>
                 </div>
                 <div className="view_more">
-                    <a href="www.google.com">
-                    <u>View More  ></u>
-                    </a>
+                    <a href=""><u>View More></u></a>
                 </div>
             </div>
+                    
+            <div className="sixth">
+            <div className="work_title">
+                <BlurInDemo text="Work Experience"/>
+            </div>
+            <div className="timeline">
+                <Timeline/>
+            </div>
+            </div>
+
+            <div className="seventh">
+                <div className="hackathon_title">
+                    <BlurInDemo text="Hackathons"/>
+                </div>
+            </div>
+            
 
             
         </>

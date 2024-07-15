@@ -12,7 +12,7 @@
     height: 700px;
     width: 95vw;
     border-radius: 15px;
-    background: linear-gradient(to top left, #3a1f7599 0%, rgba(23, 12, 48, 0.6) 85%, rgba(14, 7, 28, 0.278) 100%);
+    /* background: linear-gradient(to top left, #3a1f7599 0%, rgba(23, 12, 48, 0.6) 85%, rgba(14, 7, 28, 0.278) 100%); */
 }
 
 
@@ -27,46 +27,60 @@
     align-items: flex-start;
     padding: 20px;
     color: white;
+    width: 50%;
     font-size: 18px;
 }
-
 .languages,
 .frameworks,
 .databases,
 .tools {
     margin-bottom: 20px;
+    justify-content: flex-start;
+    text-align: left; /* Add this line to align the text */
 }
 
 h1 {
     font-size: 24px;
     margin-bottom: 10px;
+    text-align: left; /* Add this line to align the text */
+    padding-left: 10px;
 }
 
 ul {
-    list-style-type: none;
+    list-style-type: inherit;
     padding: 0;
     margin: 0;
     font-size: 20px;
     font-weight: 400;
+    text-align: left; /* Add this line to align the text */
+    padding-left: 30px;
 }
 
 li {
     margin-bottom: 5px;
+    text-align: left; /* Add this line to align the text */
 }
 
-@media (max-width: 600px) {
-    .skills {
-        flex-direction: column;
-        height: auto;
-    }
-    
-    .skill_left {
-        width: 100%;
-    }
-    
-    .skill_right {
-        align-items: center;
-        padding: 10px;
-        text-align: center;
-    }
+.tools ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: -10px;
+    text-align: left; /* Add this line to align the text */
+}
+.tools h1{
+    margin-bottom: 20px;
+    text-align: left; /* Add this line to align the text */
+}
+
+.skill_right div{
+    background: transparent;
+    color: white;
+    text-align: left; /* Add this line to align the text */
+}
+
+.languages{
+    background-color: #44414999;
+    border-radius: 10px;
+    text-align: left; /* Add this line to align the text */
 }

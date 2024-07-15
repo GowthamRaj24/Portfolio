@@ -6,7 +6,7 @@ const BlurInDemo = ({text}) => {
   return (
     <BlurIn
       word={text}
-      className="text-4xl font-bold text-black dark:text-white BlurInDemo"
+      className="text-5xl font-bold text-white BlurInDemo under-animation"
     />
   );
 };

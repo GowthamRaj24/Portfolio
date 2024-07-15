@@ -35,6 +35,9 @@
     font-weight: 500;
     margin-top: 0;
 }
+.left-hero p{
+    color: #F4F4F4 ;
+}
 
 .left-hero h2 {
     font-size: 40px;

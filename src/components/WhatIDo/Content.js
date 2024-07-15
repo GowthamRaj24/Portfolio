@@ -15,7 +15,7 @@ const Content = () => {
                <div className="relative wow box animated slideInRight">
                   <img src=""/>
                   <div className="content">
-                      <h1>Full Stack Development</h1><br/>
+                      <h1 >Full Stack Development</h1><br/>
                       <p>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                       </p>
