@@ -14,16 +14,18 @@ return (
     
 
     <VerticalTimelineElement
-        className="vertical-timeline-element--work"
-        contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-        contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+        className="vertical-timeline-element--work element "
+        contentStyle={{ background: '#3a1f7599', color: '#fff' , width:"600px" , marginLeft:"-100px" }}
+        contentArrowStyle={{ borderRight: '7px solid  #3a1f7599' }}
         date="2024 - present , Bengalore , India"   
         iconClassName = "vertical-timeline-element-icon"
-        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' , fontSize: '20px'}}
+        iconStyle={{ background:"#3a1f7599", color: '#fff' , fontSize: '20px'}}
         icon={<WorkIcon />}
     >
+        <div className='timeline-titles'>
         <h3 className="vertical-timeline-element-title">Summer Internship</h3>
         <h4 className="vertical-timeline-element-subtitle">MURTI Labs - GITAM University</h4>
+        </div>
         <p className="">
         • Part of developing a simulation tool of a coconut farm environment using AR/VR Tool, Designing arm for coconut harvesting.<br/>
         • Coconut Farm Modelling using Computer Vision, AI and ML  and a few problems on city planning.<br/>
@@ -34,16 +36,18 @@ return (
 
 
     <VerticalTimelineElement
-        className="vertical-timeline-element--work"
-        contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-        contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+        className="vertical-timeline-element--work element"
+        contentStyle={{ background: '#3a1f7599', color: '#fff', width:"600px" , marginRight:"-100px" }}
+        contentArrowStyle={{ borderRight: '7px solid  #3a1f7599' }}
         date="2024 - present , Bengalore , India"   
         iconClassName='vertical-timeline-element-icon'
-        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+        iconStyle={{ background: '#3a1f7599', color: '#fff' }}
         icon={<WorkIcon />}
     >
+        <div className='timeline-titles'>
         <h3 className="vertical-timeline-element-title">AI & ML Automation Intern</h3>
         <h4 className="vertical-timeline-element-subtitle">VYZA SOLUTIONS PVT LTD</h4>
+        </div>
         <p>
         • Developed a Back Test Engine with Multiple Deep Learning Models with the team.<br/>
         • Implemented Time Series models with Real World Data through Q-Learning, LSTM ,Reinforcement Models.<br/>
@@ -54,15 +58,17 @@ return (
 
 
     <VerticalTimelineElement
-        className="vertical-timeline-element--work"
-        contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-        contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+        className="vertical-timeline-element--work element"
+        contentStyle={{ background: '#3a1f7599', color: '#fff' , width:"600px" , marginLeft:"-100px" }}
+        contentArrowStyle={{ borderRight: '7px solid  #3a1f7599' }}
         date="2024 - present , Bengalore , India"   
-        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+        iconStyle={{ background: '#3a1f7599', color: '#fff' }}
         icon={<WorkIcon />}
     >
+        <div className='timeline-titles'>
         <h3 className="vertical-timeline-element-title">Machine Learning Intern</h3>
         <h4 className="vertical-timeline-element-subtitle">FEYNN LABS</h4>
+        </div>
         <p>
         • Prepared a Report on Product Idea which will Primarily use ML and AI to solve real world business problems.<br/>
         • Used Data Analysis techniques to Segment Real World Business Markets and Industries based on market variables.<br/>

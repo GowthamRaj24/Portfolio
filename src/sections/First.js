@@ -17,6 +17,11 @@ import "../output.css";
 import Skills from "../components/Skills/Skills";
 import Projects from "../components/Projects/Projects";
 import Timeline from "../components/Timeline/Timeline";
+import Hackathons from "../components/Hackathons/Hackathons";
+import Globe from "../components/Globe/Globe.tsx";
+import github from "../images/Screenshot (386).png";
+import leetcode from "../images/Screenshot (387).png";
+import gfg from "../images/Screenshot (388).png";
 
 const First = () => {
 
@@ -92,10 +97,41 @@ const First = () => {
                 <div className="hackathon_title">
                     <BlurInDemo text="Hackathons"/>
                 </div>
+                <div className="hack-c">
+                <Hackathons/>
+                </div>
             </div>
             
+            <div className="eigth">
+                
+            <div className="work_title prof_title">
+                <BlurInDemo text="Profiles"/>
+            </div>
+                <div className="outer_profiles">
+                    
+                    <div className="profiles">
+                        
+                        <a className="github_profile_a"><img src={github} alt="" className="github_profile"></img></a>
+                        <h1>Github</h1>
+                    </div>
+                    <div className="profiles">
+                        
+                        <a className="leetcode_profile_a" ><img src={leetcode} alt="" className="leetcode_profile"></img></a>
+                        <h1>Leetcode</h1>
+                    </div>
 
-            
+                    <div className="profiles">
+                        
+                        <a className="leetcode_profile_a" ><img src={gfg} alt="" className="leetcode_profile"></img></a>
+                        <h1>Geek for Geeks</h1>
+                    </div>
+                    <div className="profiles">
+                        
+                        <a className="leetcode_profile_a" ><img src={gfg} alt="" className="leetcode_profile"></img></a>
+                        <h1>Geek for Geeks</h1>
+                    </div>
+                </div>
+            </div>
         </>
     );
 };

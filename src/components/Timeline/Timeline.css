@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 .vertical-timeline {
-  width: 95%;
+  width: 100%;
   max-width: 1170px;
   margin: 0 auto;
   position: relative;
@@ -20,16 +20,27 @@
   left: 18px;
   height: 100%;
   width: 4px;
-  background: var(--line-color);
+  background: #7f5bcd;
 }
 .vertical-timeline.vertical-timeline--one-column-right::before {
   right: 18px;
   left: unset;
 }
 
+.timeline-titles{
+  background-color: #fff;
+  transition: all 0.5s ease;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  padding: 5px 0px;
+}
+.timeline-titles{
+  transform: scale(1.15);
+  box-shadow: black 0px 0px 10px 0px;
+}
 
 .vertical-timeline-element-title{
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 700;
     text-align: center;
     color: #3a1f75;
@@ -43,14 +54,6 @@
     transition: 0.3s ease-in-out;
 }
 
-.vertical-timeline-element:hover 
-.vertical-timeline-element-title {
-    font-size: 22px;
-}
-.vertical-timeline-element:hover 
-.vertical-timeline-element-subtitle{
-    font-size: 20px;
-}
 
 .timelineicon{
   background: 'rgb(33, 150, 243)';
@@ -118,9 +121,6 @@
 
 }
 
-.vertical-timeline-element:hover .vertical-timeline-element-description{
-    font-size: 18px;
-}
 
 .vertical-timeline--one-column-right .vertical-timeline-element-icon {
   right: 0;
@@ -135,7 +135,14 @@
   top: 50%;
   margin-left: -12px;
   margin-top: -12px;
+  transition: all 0.5s ease-in-out;
 }
+
+.vertical-timeline-element:hover .vertical-timeline-element-icon svg{
+    transform: scale(1.3);
+
+}
+
 @media only screen and (min-width: 1170px) {
   .vertical-timeline--two-columns .vertical-timeline-element-icon {
     width: 60px;
@@ -208,6 +215,7 @@
     transform: scale(1);
   }
 }
+
 
 .vertical-timeline-element-content {
   position: relative;

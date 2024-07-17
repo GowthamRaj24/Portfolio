@@ -5,7 +5,7 @@
     overflow: hidden;
 }
 .second{
-    height: 50vh;
+    height: 20vh;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -37,7 +37,7 @@
 
 .view_more{
     font-size: smaller;
-    margin-top: 150px;
+    margin-top: 100px;
     font-size: 14px;
     color: #fff;
     cursor: pointer;
@@ -101,11 +101,11 @@
 }
 
 .project_title{
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 .thirdthreejs{
-    margin-top: 80px;
+    margin-top: 40px;
 }
 
 .fifth{
@@ -122,7 +122,7 @@
 
 
 .sixth{
-    background-color: black;
+    /* background-color: black; */
     margin-top: 30px;
 }
 
@@ -131,11 +131,74 @@
     padding: 30px;
     width: 100vw;
     text-align: center;
+    
 }
 
 .hackathon_title{
     font-size: 40px;
-    padding: 30px;
+    padding-top: 30px;
     width: 100vw;
+    text-align: left;
+    margin-bottom: 100px ;
+    margin-left: 50px;
+}
+
+.seventh{
+    min-height: 100vh;
+}
+
+.eigth{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hack-c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.profiles{
+    cursor: pointer;
+    width: 40vw;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+.outer_profiles{
+    padding-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 50px;
+    column-gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+.profiles h1{
+    color: #fff;
+    font-weight: 600;
     text-align: center;
+}
+
+.leetcode_profile{
+    transition: all 0.5s ease;
+}
+.github_profile{
+    transition: all 0.5s ease;
+
+}
+
+.profiles:hover .leetcode_profile{
+    box-shadow: white 0px 0px 20px 0px;
+    transform: scale(1.2);
+}
+.profiles:hover .github_profile{
+    box-shadow: white 0px 0px 20px 0px;
+    transform: scale(1.2);
+}
+.prof_title{
+    margin-bottom: -100px;
 }

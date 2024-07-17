@@ -18,7 +18,7 @@
     display: inline-block;
     margin: 0 50px;
     width: 25%;   height: 400px;
-    background: linear-gradient(to top left, #3a1f7599 0%, rgba(23, 12, 48, 0.6) 85%, #0e071c47 100%);
+    background: #2b1756;
     border-radius: 30px;
     overflow: hidden;
     transform: translateY(0);
