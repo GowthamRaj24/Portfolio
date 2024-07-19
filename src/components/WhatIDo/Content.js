@@ -3,7 +3,9 @@ import "./Content.css";
 import React, { useEffect } from 'react';
 import WOW from 'wowjs';
 import { BorderLight } from "../BorderLight/BorderLight.tsx";
-
+import fullstack from "../../images/0_M4bxiCIjcTK-2Xr6.jpg";
+import ml from "../../images/ml_whatido.jpeg";
+import cp from "../../images/cp_whatido.jpg";
 const Content = () => {
     
     useEffect(() => {
@@ -12,38 +14,45 @@ const Content = () => {
     }, []);
     return(
         <div className="boxes">
-               <div className="relative wow box animated slideInRight">
-                  <img src=""/>
-                  <div className="content">
-                      <h1 >Full Stack Development</h1><br/>
-                      <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                      </p>
-                  </div>
-                  {/* <BorderLight size={300} duration={12} delay={90} /> */}
-               </div>
                <div className="box">
-                 <img src=""/>
+                <img src={ml} />
                  <div className="content">
                      <div className="contenticon">
                         
                      </div>
-                     <h1>ML Engineering</h1><br/>
-                     <p>
-                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece
-                         of classical Latin literature from 45 BC .
-                     </p>
+                     <h1>ML Engineer</h1><br/>
+                     <ul className="content_points">
+                        <li>Implemented Time Series models with Real World Data through Q-Learning, LSTM ,Reinforcement Models.</li>
+                        <li>Worked on Real-Time Data, Reports and Compoter Vision</li>
+                        <li>Prepared a Report on Product Idea which will Primarily use ML and AI to solve real world business problems.</li>
+                     </ul>
+                 </div>
+                 {/* <BorderLight size={300} duration={12} delay={90} /> */}
+              </div>
+               <div className="box">
+                <img src={fullstack} className="full_img"/>
+                 <div className="content">
+                     <div className="contenticon">
+                        
+                     </div>
+                     <h1>Full Stack Developer</h1><br/>
+                     <ul className="content_points">
+                        <li>Developed dynamic, responsive web applications using MongoDB, Express.js, React, and Node.js</li>
+                        <li>Designed and implemented RESTful APIs to handle data exchanges between the frontend and backend.</li>
+                        <li>Worked with version control systems like Git for efficient code management and collaboration.</li>
+                     </ul>
                  </div>
                  {/* <BorderLight size={300} duration={12} delay={90} /> */}
               </div>
               <div className="box">
-                 <img src=""/>
+                 <img src={cp} className="cp_img"/>
                  <div className="content">
                      <h1>Competitive Programmer</h1><br/>
-                     <p>
-                        It is a long established fact that a reader will be distracted by the readable content of
-                         a page when looking at its layout.
-                     </p>
+                     <ul className="content_points">
+                        <li>Participated in and excelled at numerous coding competitions on platforms like Codeforces, LeetCode..</li>
+                        <li>Proficient in various programming languages including C++, Python, and Java.</li>
+                        <li>Developed problem-solving skills by tackling complex algorithmis.</li>
+                     </ul>
                  </div>
                  {/* <BorderLight size={300} duration={12} delay={90} /> */}
               </div>

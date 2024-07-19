@@ -5,6 +5,7 @@ import WorkIcon from '@material-ui/icons/Work';
 import SchoolIcon from '@material-ui/icons/School';
 import StarIcon from '@material-ui/icons/Star';
 import { DockDemo } from '../ContactsDock/DemoDock';
+import { ProjectDock } from '../ProjectDock/ProjectDock';
 
 
 
@@ -31,7 +32,7 @@ return (
         • Coconut Farm Modelling using Computer Vision, AI and ML  and a few problems on city planning.<br/>
         • We are in the process of organizing a training session on Drone piloting by Clear Water Dynamics for the GITAM family and you will be part of it. 
         </p>
-        <DockDemo/>
+        <ProjectDock />
     </VerticalTimelineElement>
 
 
@@ -53,7 +54,7 @@ return (
         • Implemented Time Series models with Real World Data through Q-Learning, LSTM ,Reinforcement Models.<br/>
         • Accelerated development by 40%, delivered multiple fully functional Stock Signalling Models.
         </p>
-        <DockDemo/>
+        <ProjectDock github={"https://github.com/GowthamRaj24/FINANCIAL_MODELS_VYZA"} linkedin={"https://www.linkedin.com/feed/update/urn:li:activity:7173199482128465920/"} certificate={"https://drive.google.com/file/d/1REhx3eZh8XXf0Tq7IFIO_EN5EmSIvlBC/view?usp=drive_link"}/>
     </VerticalTimelineElement>
 
 
@@ -74,7 +75,7 @@ return (
         • Used Data Analysis techniques to Segment Real World Business Markets and Industries based on market variables.<br/>
         • Worked with a team of 5members and learnt how to deal with Real World Data.
         </p>
-        <DockDemo/>
+        <ProjectDock/>
     </VerticalTimelineElement>
 
     

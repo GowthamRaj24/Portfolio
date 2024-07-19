@@ -3,7 +3,7 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { ConvexGeometry } from 'three/examples/jsm/geometries/ConvexGeometry.js';
 import * as BufferGeometryUtils from 'three/examples/jsm/utils/BufferGeometryUtils.js';
-import discTexture from '../../images/instagram.png';
+import discTexture from '../../images/1694932621902.jpeg';
 
 
 const ConvexGeometryExample = () => {
@@ -29,7 +29,7 @@ const ConvexGeometryExample = () => {
             // controls
             const controls = new OrbitControls(camera, renderer.domElement);
             controls.minDistance = 35;
-            controls.maxDistance = 50;
+            controls.maxDistance = 80;
             controls.maxPolarAngle = Math.PI / 2;
 
             // point light
@@ -38,7 +38,7 @@ const ConvexGeometryExample = () => {
 
             // textures
             const loader = new THREE.TextureLoader();
-            const texture = loader.load();
+            const texture = loader.load(discTexture);
             texture.colorSpace = THREE.SRGBColorSpace;
 
             group = new THREE.Group();

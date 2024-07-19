@@ -6,40 +6,40 @@ import { faGithubSquare } from '@fortawesome/free-brands-svg-icons';
 const Projects = () => {
     const [modalInfo, setModalInfo] = useState({
         1: {
-            title: "Project 1",
-            info: "...",
-            link: "#",
-            github: "#"
+            title: "Spam Classifier",
+            info: `The classifier uses natural language processing (NLP) techniques and machine learning algorithms to distinguish between spam and non-spam messages. `,
+            link: "https://github.com/GowthamRaj24/Spam-Classifier",
+            github: "https://github.com/GowthamRaj24/Spam-Classifier"
         },
         2: {
-            title: "Project 2",
-            info: "...",
-            link: "#",
-            github: "#"
+            title: "Customer Churn Prediction",
+            info: "The goal was to predict customer churn rates based on a variety of features, including customer demographics, banking activities, and historical transaction data.",
+            link: "https://github.com/GowthamRaj24/PROJECT_Churn_Prediction",
+            github: "https://github.com/GowthamRaj24/PROJECT_Churn_Prediction"
         },
         3: {
-            title: "Project 3",
-            info: "...",
-            link: "#",
-            github: "#"
+            title: "Market Segmentation",
+            info: "Market segmentation is a critical strategy in marketing and business that involves dividing a broad target market into subsets of consumers who have common needs, preferences, or characteristics. ",
+            link: "https://github.com/GowthamRaj24/FEYNN_LABS",
+            github: "https://github.com/GowthamRaj24/FEYNN_LABS"
         },
         4: {
-            title: "Project 4",
-            info: "....",
-            link: "#",
-            github: "#"
+            title: "Personal Portfolio",
+            info: "A personal portfolio typically showcases my skills, projects, achievements, and experiences in a structured and compelling manner, highlighting my capabilities, practical applications of my knowledge, significant milestones, and professional journey.",
+            link: "https://github.com/GowthamRaj24/Portfolio",
+            github: "https://github.com/GowthamRaj24/Portfolio"
         },
         5: {
-            title: "Project 5",
-            info: "...",
-            link: "#",
-            github: "#"
+            title: "House Price Prediction",
+            info: "Developed a machine learning model to predict house prices based on various features such as location, size, number of bedrooms, and other relevant attributes. This project leverages data analysis and advanced predictive algorithms to provide accurate price estimates.",
+            link: "https://github.com/GowthamRaj24/Real-estate-prices",
+            github: "https://github.com/GowthamRaj24/Real-estate-prices"
         },
         6: {
-            title: "Project 6",
-            info: "...",
-            link: "#",
-            github: "#"
+            title: "Car Price Estimation",
+            info: "Developed a machine learning model to estimate car prices based on various features such as brand, model, year, mileage, fuel type, and other relevant attributes. This project aims to provide accurate price estimates for cars in the used car market.",
+            link: "https://github.com/GowthamRaj24/Car_Prediction_Amount",
+            github: "https://github.com/GowthamRaj24/Car_Prediction_Amount"
         }
     });
 
@@ -53,8 +53,8 @@ const Projects = () => {
     };
 
     const fillOut = (id, img) => {
-        document.getElementById("title").innerHTML = modalInfo[id].title;
-        document.getElementById("info").innerHTML = modalInfo[id].info;
+        document.getElementById("pro_title").innerHTML = modalInfo[id].title;
+        document.getElementById("pro_info").innerHTML = modalInfo[id].info;
         document.getElementById("img").src = img;
         document.getElementById("live").onclick = function () {
             window.open(modalInfo[id].link, "_blank");
@@ -83,12 +83,12 @@ const Projects = () => {
                 <div className="custom-container">
                     <div className="custom-item" id="1">
                         <img
-                            src="https://images.unsplash.com/photo-1508124780861-b1687f9a13e5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f841d43a63c085e930aa5b6b33e89a9f&auto=format&fit=crop&w=1385&q=80"
+                            src="https://editor.analyticsvidhya.com/uploads/32086heading.jpeg"
                             alt=""
                         />
                         <div className="custom-text">
-                            <h3>PROJECT 1</h3>
-                            <p>Short Description</p>
+                            <h3>Spam Classifier</h3>
+                            <p>The classifier uses natural language processing (NLP) techniques and machine learning algorithms to distinguish between spam and non-spam messages.</p>
                         </div>
                         <div className="custom-button" onClick={(e) => openModal(e.target.parentElement)}>
                             Learn More
@@ -97,12 +97,12 @@ const Projects = () => {
 
                     <div className="custom-item" id="2">
                         <img
-                            src="https://images.unsplash.com/photo-1496492352121-593138d42a61?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3542849cc0459345e3aa82a90ae51a01&auto=format&fit=crop&w=1350&q=80"
+                            src="https://daxg39y63pxwu.cloudfront.net/images/blog/churn-models/Customer_Churn_Prediction_Models_in_Machine_Learning.png"
                             alt=""
                         />
                         <div className="custom-text">
-                            <h3>PROJECT 2</h3>
-                            <p>Short Description</p>
+                            <h3>Customer Churn Prediction</h3>
+                            <p>The goal was to predict customer churn rates based on a variety of features, including customer demographics, banking activities, and historical transaction data.</p>
                         </div>
                         <div className="custom-button" onClick={(e) => openModal(e.target.parentElement)}>
                             Learn More
@@ -111,12 +111,14 @@ const Projects = () => {
 
                     <div className="custom-item" id="3">
                         <img
-                            src="https://images.unsplash.com/photo-1515215676803-119c88d493cf?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=baf00747bfb9fe41ad9af8cf00dbebbf&auto=format&fit=crop&w=1350&q=80"
+                            src="https://useinsider.com/assets/media/2022/03/market-segmentation-feature.png"
                             alt=""
+                            height="100%"
+                            width="100%"
                         />
                         <div className="custom-text">
-                            <h3>PROJECT 3</h3>
-                            <p>Short Description</p>
+                            <h3>Market Segmentation</h3>
+                            <p>Market segmentation is a critical strategy in marketing and business that involves dividing a broad target market into subsets of consumers who have common needs, preferences, or characteristics. </p>
                         </div>
                         <div className="custom-button" onClick={(e) => openModal(e.target.parentElement)}>
                             Learn More
@@ -125,12 +127,15 @@ const Projects = () => {
 
                     <div className="custom-item" id="4">
                         <img
-                            src="https://images.unsplash.com/photo-1496939217462-7d42e9a74f0e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5e3be993a88feed38e4f5374ff3ba115&auto=format&fit=crop&w=1350&q=80g"
+                            src="https://static.vecteezy.com/system/resources/previews/011/067/273/non_2x/portfolio-button-portfolio-speech-bubble-portfolio-colorful-web-banner-illustration-vector.jpg"
                             alt=""
+                            height="120%"
+                            width="100%"
+
                         />
                         <div className="custom-text">
-                            <h3>PROJECT 4</h3>
-                            <p>Short Description</p>
+                            <h3>Personal Portfolio</h3>
+                            <p>A personal portfolio typically showcases my skills, projects, achievements, and experiences in a structured and compelling manner, highlighting my capabilities, practical applications of my knowledge, significant milestones, and professional journey.</p>
                         </div>
                         <div className="custom-button" onClick={(e) => openModal(e.target.parentElement)}>
                             Learn More
@@ -139,12 +144,12 @@ const Projects = () => {
 
                     <div className="custom-item" id="5">
                         <img
-                            src="https://images.unsplash.com/photo-1504875427817-937a8a12e167?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cd7f399ba43093ead08e7dbf5e083f09&auto=format&fit=crop&w=1434&q=80"
+                            src="https://miro.medium.com/v2/resize:fit:804/1*D6s2K1y7kjE14swcgITB1w.png"
                             alt=""
                         />
                         <div className="custom-text">
-                            <h3>PROJECT 5</h3>
-                            <p>Short Description</p>
+                            <h3>House Price Prediction</h3>
+                            <p>Developed a machine learning model to predict house prices based on various features such as location, size, number of bedrooms, and other relevant attributes. This project leverages data analysis and advanced predictive algorithms to provide accurate price estimates.</p>
                         </div>
                         <div className="custom-button" onClick={(e) => openModal(e.target.parentElement)}>
                             Learn More
@@ -153,12 +158,12 @@ const Projects = () => {
 
                     <div className="custom-item" id="6">
                         <img
-                            src="https://images.unsplash.com/photo-1493962853295-0fd70327578a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f758b0379f730e73c03b6153aaad7cf1&auto=format&fit=crop&w=1350&q=80"
+                            src="https://www.carz4sale.in/pictures/static/used-car-valuation.png"
                             alt=""
                         />
                         <div className="custom-text">
-                            <h3>PROJECT 6</h3>
-                            <p>Short Description</p>
+                            <h3>Car Price Estimation</h3>
+                            <p>Developed a machine learning model to estimate car prices based on various features such as brand, model, year, mileage, fuel type, and other relevant attributes. This project aims to provide accurate price estimates for cars in the used car market.</p>
                         </div>
                         <div className="custom-button" onClick={(e) => openModal(e.target.parentElement)}>
                             Learn More
@@ -171,17 +176,17 @@ const Projects = () => {
                         
                         <img id="img" src="" alt="" />
                         <div id="details">
-                        <span className="custom-close" onClick={closeModal}>
-                            &times;
-                        </span>
-                            <h3 id="title"></h3>
-                            <p id="info">Some text</p>
-                            <div className="custom-button" id="live">
-                                View
-                            </div>
-                            <i className="fab fa-github-square" id="github">
-                                <FontAwesomeIcon icon={faGithubSquare} className="github-icon" />
-                            </i>
+                            <span className="custom-close" onClick={closeModal}>
+                                &times;
+                            </span>
+                                <h3 id="pro_title"></h3>
+                                <p id="pro_info">Some text</p>
+                                <div className="custom-button" id="live">
+                                    View
+                                </div>
+                                <i className="fab fa-github-square" id="github">
+                                    <FontAwesomeIcon icon={faGithubSquare} className="github-icon" />
+                                </i>
                         </div>
                     </div>
                 </div>

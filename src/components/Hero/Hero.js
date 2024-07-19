@@ -25,6 +25,9 @@ const Hero = () => {
         };
     }, []);
 
+
+    
+
     return (
         <div className="hero animate__animated" id="hero" style={{ transform: `scale(${1 - scrollY * 0.001})` }}>
             
@@ -34,8 +37,8 @@ const Hero = () => {
                 <p className='hero_description'>I am a highly motivated individual pursuing Bachelor of Technology at GITAM University.
                     <br />Currently, I am actively seeking an internship opportunity to further enrich my practical understanding of the field.</p>
                 <div className="hero_button">
-                    <Button>Resume</Button>
-                    <Button>Hire Me</Button>
+                    <Button link={"https://drive.google.com/file/d/13VjLUVAUEJsX-gF6LisgsqR2pKsi1IoV/view"} hire={false}>Resume</Button>
+                    <Button hire={true}>Hire Me</Button>
                 </div>
             </div>
             <div className="right-hero animate__animated animate__fadeIn animate__slower">
@@ -45,11 +48,12 @@ const Hero = () => {
 
                 <div className="contacts" >
                     <div className='dock'>
-                        <DockDemo/>
+                        <DockDemo github="https://github.com/GowthamRaj24" arr={["github" , "leetcode" , "linkedin" ]}/>
                     </div>
                 </div>
             </div>
             
+
             
         </div>
     );

@@ -12,7 +12,7 @@ button {
   appearance: none;
   border: none;
   cursor: pointer;
-  background-color: #acc7ed;
+  background-color: transparent;
   color: #fff;
   border-radius: 60px;
   outline: none;
@@ -26,7 +26,6 @@ button {
   position: relative;
   text-align: center;
   display: flex;
-  
   align-items: center;
 }
 

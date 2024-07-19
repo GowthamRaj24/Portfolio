@@ -17,9 +17,7 @@ function App() {
 
   return (
     <div className="App">
-      {loading ? 
-      <Loader /> : 
-      <First />}
+      <First />
     </div>
   );
 }

@@ -12,7 +12,6 @@
     height: 700px;
     width: 95vw;
     border-radius: 15px;
-    /* background: linear-gradient(to top left, #3a1f7599 0%, rgba(23, 12, 48, 0.6) 85%, rgba(14, 7, 28, 0.278) 100%); */
 }
 
 
@@ -20,67 +19,60 @@
     width: 50%;
 }
 
-.skill_right {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
+.skill_right{
+    width: 50vw;
+    border-radius: 10px;
+    height: 600px;
     padding: 20px;
-    color: white;
-    width: 50%;
-    font-size: 18px;
+    margin-left: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.languages,
-.frameworks,
-.databases,
-.tools {
-    margin-bottom: 20px;
-    justify-content: flex-start;
-    text-align: left; /* Add this line to align the text */
+
+.items{
+    margin-left: 30px;
+    justify-content: center;
+    transition: all 0.5s ease;
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 10px;
     text-align: left; /* Add this line to align the text */
     padding-left: 10px;
+    
 }
 
-ul {
-    list-style-type: inherit;
-    padding: 0;
-    margin: 0;
-    font-size: 20px;
-    font-weight: 400;
-    text-align: left; /* Add this line to align the text */
-    padding-left: 30px;
+
+
+.skill_right_container {
+    margin-bottom: 20px;
+    justify-content: flex-start;
+    text-align: left;
+    background-color: #2b1756;
+    padding: 30px;
 }
+
+
+
+
+
 
 li {
     margin-bottom: 5px;
-    text-align: left; /* Add this line to align the text */
+    text-align: left;
+    list-style: inherit;
 }
 
-.tools ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-bottom: -10px;
-    text-align: left; /* Add this line to align the text */
-}
-.tools h1{
-    margin-bottom: 20px;
-    text-align: left; /* Add this line to align the text */
+.items:hover{
+    margin-left: 50px;
+    color: #fff;
 }
 
-.skill_right div{
-    background: transparent;
-    color: white;
-    text-align: left; /* Add this line to align the text */
+.item_last{
+    transition: all 0.5s ease;
 }
-
-.languages{
-    background-color: #44414999;
-    border-radius: 10px;
-    text-align: left; /* Add this line to align the text */
+.item_last:hover{
+    color: #fff;
 }
