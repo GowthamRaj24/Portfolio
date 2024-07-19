@@ -1,4 +1,3 @@
-import { Description } from "@material-ui/icons";
 import "./OrbitContent.css";
 import ScrollReveal from "scrollreveal";
 import { useEffect } from "react";
