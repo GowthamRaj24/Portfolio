@@ -30,7 +30,6 @@ export default function Button({ children, link, hire }) {
     }
   };
 
-
   return (
     <>
       <MotionConfig transition={transition}>
@@ -89,8 +88,6 @@ export default function Button({ children, link, hire }) {
           </motion.div>
         </motion.button>
       </MotionConfig>
-
-
     </>
   );
 }

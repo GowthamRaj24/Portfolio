@@ -75,7 +75,7 @@ return (
         • Used Data Analysis techniques to Segment Real World Business Markets and Industries based on market variables.<br/>
         • Worked with a team of 5members and learnt how to deal with Real World Data.
         </p>
-        <ProjectDock/>
+        <ProjectDock github={"https://github.com/GowthamRaj24/FEYNN_LABS"} linkedin={""}/>
     </VerticalTimelineElement>
 
     

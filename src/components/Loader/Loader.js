@@ -1,13 +1,18 @@
 // src/components/Loader.js
 import React from 'react';
 import './Loader.css';
+import "remixicon/fonts/remixicon.css";
 
-const Loader = () => (
-    <div className="loader">
-        <div className="inner one"></div>
-        <div className="inner two"></div>
-        <div className="inner three"></div>
+const Loader = () => {
+    return(
+    <div class="loading">
+    <div class="icons">
+      <i class="ri-arrow-left-s-line"></i>
+      <i class="ri-arrow-right-s-line"></i>
     </div>
-);
+
+  </div>
+    )
+};
 
 export default Loader;

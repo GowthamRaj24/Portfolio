@@ -28,11 +28,11 @@ const Skills = () => {
                     <Grid container spacing={2}>
                         <Grid item xs={7} >
                             <h1>Programming Languages</h1>
-                            <Item  sx={{backgroundColor:"#2b1756" , color:"#9c9a9a" , fontSize:"20px", borderRadius:"10px"}}>
+                            <Item  sx={{backgroundColor:"#2b1756" , color:"#9c9a9a" , fontSize:"20px", borderRadius:"10px"}} >
                                 <div className='items'>
-                                <ul style={{listStyle:"inherit"}}>
-                                    {programming_lang.map((lang) => <li>{lang}</li>)}
-                                </ul>
+                                    <ul style={{listStyle:"inherit"}}>
+                                        {programming_lang.map((lang) => <li>{lang}</li>)}
+                                    </ul>
                                 </div>
                             </Item>
                         </Grid>

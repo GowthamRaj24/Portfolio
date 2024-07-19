@@ -1,8 +1,9 @@
-// src/App.js
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import First from './sections/First';
 import Loader from './components/Loader/Loader';
+
+// src/App.js
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -16,9 +17,15 @@ function App() {
   }, []);
 
   return (
+    <>
+    <head>
+      <title>Personal Portfolio</title>
+    </head>
     <div className="App">
-      <First />
+      {loading ? <Loader /> : <First />}
     </div>
+    </>
+    
   );
 }
 

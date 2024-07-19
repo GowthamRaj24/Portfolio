@@ -29,7 +29,7 @@ const Hero = () => {
     
 
     return (
-        <div className="hero animate__animated" id="hero" style={{ transform: `scale(${1 - scrollY * 0.001})` }}>
+        <div className="hero  animate__animated animate__fadeIn animate__slower" id="hero" style={{ transform: `scale(${1 - scrollY * 0.001})` }}>
             
             <div className="left-hero animate__animated animate__fadeIn animate__slower">
                 <h1><span>I am </span> Gowtham Raju</h1>
