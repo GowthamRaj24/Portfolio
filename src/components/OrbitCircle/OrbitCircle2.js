@@ -1,7 +1,5 @@
 import OrbitingCircles from "./OrbitCircle.tsx";
 import OrbitContent from "./OrbitContent.js";
-import { useEffect } from "react";
-import ScrollReveal from "scrollreveal";
 
 
 export function OrbitingCirclesDemo2({t , d}) {

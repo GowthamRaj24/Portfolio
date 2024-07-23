@@ -92,7 +92,7 @@ const First = () => {
 
             <div className="seventh">
                 <div className="hackathon_title">
-                    <BlurInDemo text="Hackathons"/>
+                    <BlurInDemo text="Achievements"/>
                 </div>
                 <div className="hack-c">
                 <Hackathons/>

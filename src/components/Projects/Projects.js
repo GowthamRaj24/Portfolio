@@ -91,7 +91,7 @@ const Projects = () => {
                             <p>The classifier uses natural language processing (NLP) techniques and machine learning algorithms to distinguish between spam and non-spam messages.</p>
                         </div>
                         <div className="custom-button" onClick={(e) => openModal(e.target.parentElement)}>
-                            Learn More
+                            Open
                         </div>
                     </div>
 
@@ -105,7 +105,7 @@ const Projects = () => {
                             <p>The goal was to predict customer churn rates based on a variety of features, including customer demographics, banking activities, and historical transaction data.</p>
                         </div>
                         <div className="custom-button" onClick={(e) => openModal(e.target.parentElement)}>
-                            Learn More
+                            Open
                         </div>
                     </div>
 
@@ -121,7 +121,7 @@ const Projects = () => {
                             <p>Market segmentation is a critical strategy in marketing and business that involves dividing a broad target market into subsets of consumers who have common needs, preferences, or characteristics. </p>
                         </div>
                         <div className="custom-button" onClick={(e) => openModal(e.target.parentElement)}>
-                            Learn More
+                            Open
                         </div>
                     </div>
 
@@ -138,7 +138,7 @@ const Projects = () => {
                             <p>A personal portfolio typically showcases my skills, projects, achievements, and experiences in a structured and compelling manner, highlighting my capabilities, practical applications of my knowledge, significant milestones, and professional journey.</p>
                         </div>
                         <div className="custom-button" onClick={(e) => openModal(e.target.parentElement)}>
-                            Learn More
+                            Open
                         </div>
                     </div>
 
@@ -152,7 +152,7 @@ const Projects = () => {
                             <p>Developed a machine learning model to predict house prices based on various features such as location, size, number of bedrooms, and other relevant attributes. This project leverages data analysis and advanced predictive algorithms to provide accurate price estimates.</p>
                         </div>
                         <div className="custom-button" onClick={(e) => openModal(e.target.parentElement)}>
-                            Learn More
+                            Open
                         </div>
                     </div>
 
@@ -166,7 +166,7 @@ const Projects = () => {
                             <p>Developed a machine learning model to estimate car prices based on various features such as brand, model, year, mileage, fuel type, and other relevant attributes. This project aims to provide accurate price estimates for cars in the used car market.</p>
                         </div>
                         <div className="custom-button" onClick={(e) => openModal(e.target.parentElement)}>
-                            Learn More
+                            Open
                         </div>
                     </div>
                 </div>
