@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.hero {
+    position: relative;
+    margin: 30px auto;
+    z-index: 999;
+    margin-top: 40px;
+    display: flex;
+    position:relative;
+    top: 40px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 700px;
+    width: 1350px;
+    border-radius: 15px;
+    background: linear-gradient(to top left, #3a1f7599 0%, rgba(23, 12, 48, 0.6) 85%, rgba(14, 7, 28, 0.278) 100%);
+}
+
+.left-hero {
+    width: 60%;
+    padding: 40px;
+    margin-top: 50px;
+}
+
+.hero_sub{
+    margin-bottom: 50px;
+}
+
+
+.left-hero h1 {
+    font-size: 40px;
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    font-weight: 500;
+    margin-top: 0;
+}
+.left-hero p{
+    color: #F4F4F4 ;
+}
+
+.left-hero h2 {
+    font-size: 40px;
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    font-weight: normal;
+    margin-top: 30px;
+}
+
+.left-hero h2 span , h1 span{
+    opacity: 0.6;
+}
+
+.left-hero p {
+    font-size: 20px;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.right-hero {
+    width: 40%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: -20px;
+}
+.right-hero div{
+
+}
+
+.image {
+    text-align: center;
+}
+
+.image img{
+    height: 300px;
+    width: 300px;
+    margin-top: -20px;
+}
+
+.hero_button{
+    display: flex;
+    max-width: 150px;
+    max-height: 80px;
+    padding: 15px 30px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero_button button{
+    background-color: #17004A;
+    margin-top: 50px;
+    margin-right: 180px;
+}
+
+.contacts {
+    position: relative;
+    height: 140px;
+    width: 350px;
+    border-radius: 30px;
+    display: flex;
+}
+.dock{
+    position: absolute;
+    top: 60px;
+}

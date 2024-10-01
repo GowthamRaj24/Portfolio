@@ -1,0 +1,13 @@
+/* src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  margin: 0;
+  background-color: #13072E;
+  /* background-color: #ffffff; */
+  transition: background-color 0.3s ease;
+  font-family: Libre Franklin;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}

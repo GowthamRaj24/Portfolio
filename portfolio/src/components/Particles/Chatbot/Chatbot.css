@@ -1,0 +1,53 @@
+.second_chatbot {
+    position: relative;
+    border-radius: 20px;
+    border: 1px solid #3a1f7599;
+    display: flex;
+    color: white;
+    font-size: large;
+    width: 30vw;
+    margin-left: -50px;
+    height: 60vh;
+    background: linear-gradient(to top left, #3a1f7599 0%, rgba(23, 12, 48, 0.6) 85%, rgba(14, 7, 28, 0.278) 100%);
+    flex-direction: column; /* Add this line to stack the header, content, and footer vertically */
+}
+
+.chatbot_header {
+    border-radius: 20px;
+    border: 1px solid #3a1f7599;
+    height: 60px;
+    background-color: #3a1f7599;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Add this line to vertically center the items */
+}
+
+.chatbot_header span img {
+    width: 40px;
+    height: 40px;
+    margin: 10px 20px; /* Combine margin properties for shorthand */
+}
+
+.chatbot_header h4 {
+    text-align: center;
+    margin: 0; /* Remove auto margin to center the text */
+}
+
+.chatbot_footer {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Add this line to horizontally center the input */
+}
+
+.chatbot_footer input {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    height: 50px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: none;
+    background-color: #f1f1f1;
+    opacity: 0.7;
+}

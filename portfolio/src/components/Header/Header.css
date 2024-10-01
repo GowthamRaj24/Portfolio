@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+#head {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index:1000;
+}
+
+
+
+header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  color: white;
+  
+  height: 70px;
+  position: fixed;
+  top: 0; 
+  left: 0;
+  right: 0;
+  backdrop-filter: blur(10px);
+  margin: 0 auto; /* Center horizontally */
+  border-radius: 40px;
+  background-color: transparent;
+  z-index: 1000;
+  font-family: 'Inter', sans-serif;
+}
+
+#header_title {
+    padding: 10px;
+    margin-left: 40px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+header ul {
+    display: inline;
+    float: right;
+    padding: 10px;
+    margin: 10px;
+}
+
+header ul li {
+    display: inline;
+    padding: 10px;
+    margin: 15px;
+    font-size: medium;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.5s ease-in-out, font-weight 0.5s ease-in-out; /* Apply transition for color and font-weight */
+}
+
+header ul li a:hover {
+  font-weight: bold; /* Assuming you want the font weight to change on hover */
+  /* Any other hover styles */
+}
+
+#hire_me_button {
+    margin-right: 20px;
+    max-width: 150px;
+    max-height: 80px;
+    background-color: transparent;
+}
+
+
+
+.hover-animation {
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+  }
+  
+  .hover-animation::after {
+
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  .active{
+    text-underline-offset: 0.2em;
+  }
+
+  header ul li :hover {
+    /* font-size: larger; */
+    font-weight: bold;
+    margin-bottom: 12px;
+    transition: 0.5s ease-out;
+}

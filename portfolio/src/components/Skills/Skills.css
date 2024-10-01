@@ -1,0 +1,78 @@
+.skills {
+    position: relative;
+    margin: 30px auto;
+    z-index: 999;
+    margin-top: 40px;
+    display: flex;
+    position: relative;
+    top: 40px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 700px;
+    width: 95vw;
+    border-radius: 15px;
+}
+
+
+.skill_left {
+    width: 50%;
+}
+
+.skill_right{
+    width: 50vw;
+    border-radius: 10px;
+    height: 600px;
+    padding: 20px;
+    margin-left: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.items{
+    margin-left: 30px;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+
+h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: left; /* Add this line to align the text */
+    padding-left: 10px;
+    
+}
+
+
+
+.skill_right_container {
+    margin-bottom: 20px;
+    justify-content: flex-start;
+    text-align: left;
+    background-color: #2b1756;
+    padding: 30px;
+}
+
+
+
+
+
+
+li {
+    margin-bottom: 5px;
+    text-align: left;
+    list-style: inherit;
+}
+
+.items:hover{
+    margin-left: 50px;
+    color: #fff;
+}
+
+.item_last{
+    transition: all 0.5s ease;
+}
+.item_last:hover{
+    color: #fff;
+}

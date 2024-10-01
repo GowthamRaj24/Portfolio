@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.custom-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vH;
+    font-family: Roboto;
+}
+
+.custom-section h1 {
+    font-size: 40pt;
+    font-weight: 500;
+    color: #363638;
+}
+
+.custom-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.custom-item {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 450px;
+    max-width: 450px;
+    height: 350px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.custom-item:hover {
+    cursor: pointer;
+}
+
+.custom-item * {
+    transition: all 0.35s ease-in-out;
+}
+
+.custom-item img {
+    max-width: 500px;
+    vertical-align: top;
+    height: 400px;
+}
+
+.custom-item:hover img {
+    opacity: 0.2;
+    transform: scale(1.1);
+}
+
+.custom-text {
+    width: 80%;
+    height: 90%;
+    position: absolute;
+    top: -150px;
+    left: 10%;
+    color: #01A2AC;
+}
+.custom-text h3{
+    margin-bottom: 30px;
+}
+
+.custom-text h3 {
+    color: #fff;
+    font-size: 20px;
+}
+
+.custom-text p {
+    color: #fff;
+    font-size: 15px;
+}
+
+.custom-item:hover .custom-text {
+    top: 20%;
+}
+
+.custom-item:hover .custom-button {
+    bottom: 20%;
+}
+
+.custom-button {
+    font-size: 25px;
+    position: absolute;
+    bottom: -100px;
+    left: 25%;
+    width: 50%;
+    border: 3px solid #ffffff;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.custom-button:hover {
+    background-color:  #40227b00;
+    transform: scale(1.1);
+    color: #F5F5F5;
+}
+
+/* Modal */
+
+.custom-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.custom-modal-content {
+    background-color: #F5F5F5;
+    margin: 5% auto;
+    box-sizing: border-box;
+    width: 700px;
+    max-height: 714px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.scale {
+    animation: scale 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes scale {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+
+#img {
+    width: 100%;
+    height: 450px;
+}
+
+#details {
+    padding: 25px;
+    text-align: left;
+    position: relative;
+    height: 264px;
+    box-sizing: border-box;
+    border-top: 1px solid #363638;
+}
+
+#details * {
+    transition: all .3s;
+}
+
+#title {
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#details .custom-button {
+    position: absolute;
+    width: 30%;
+    background-color: #13072E;
+    color: #F5F5F5;
+    text-align: center;
+    left: 25px;
+    bottom: 35px;
+    padding: 15px;
+}
+
+#details i {
+    position: absolute;
+    bottom: 30px;
+    right: 25px;
+    font-size: 3rem;
+    color: #13072E;
+}
+
+#details .custom-button:hover,
+i:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+/* Close Button */
+.custom-close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    right: 10px;
+}
+
+.custom-close:hover,
+.custom-close:focus {
+    color: #363638;
+    text-decoration: none;
+    cursor: pointer;
+}
+#details{
+    position: relative;
+}
+
+#pro_title{
+    color: grey;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+#pro_info{
+    color: grey;
+    font-size: 20px;
+}
